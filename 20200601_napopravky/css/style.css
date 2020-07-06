@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/*CSS Reset*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ol,ul {
+    list-style: none;
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+a, a:hover, a:visited, a:focus {text-decoration:-moz-none;
+    text-decoration:none;}
+a:active,a:focus{outline: none;}
+
+/*End CSS Reset*/
+
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;}
+h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1B234A;
+    margin: 0 0 24px;
+}
+.center{
+    margin: 0 auto;
+    max-width: 846px;
+    width: 100%;
+    padding: 20px 0 30px;
+    /*position: relative;*/
+}
+
+.main_block {
+    margin: 0 auto;
+        padding: 0 0 30px;
+    max-width: 846px;
+    background: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px rgba(27, 35, 74, 0.15), 0px 4px 6px rgba(27, 35, 74, 0.06);
+}
+
+.block_img {
+    height: 397px;
+    text-align: center;
+    padding: 33px 0 31px 0;}
+
+.block_txt h2{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height, or 138% */
+
+    text-align: center;
+    color: #1B234A;
+    margin: 30px auto;
+
+}
+.block_txt p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+    padding: 0 15px;
+    text-align: center;
+
+    /* Gray/600 */
+
+    color: #616F97;
+    margin: 0 0 40px;
+}
+
+.block_btn {
+
+
+
+    margin: 0 auto;
+
+
+}
+.button {
+    max-width: 285px;
+    background: #40B3B7;
+    margin: 0 auto;
+    width: 100%;
+    height: 48px;
+    padding: 16px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+hr{
+    /*height: 1px;*/
+    color: #DEE1ED;
+    /*background: #DEE1ED;*/
+}
+.button:hover {
+    background: #2f767a;
+}
+.block_btn span{
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.anketa_background{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    /*height: 100%;*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: rgba(27, 35, 74, 0.7);
+    transition: all 1s;
+}
+.anketa_block{
+    position: relative;
+    max-width: 763px;
+    width: 100%;
+    background: #FFFFFF;
+    margin: 32px auto 32px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(27, 35, 74, 0.25);
+    box-sizing: border-box;
+    padding-bottom: 32px;
+
+}
+.anketa {
+    padding: 0 32px 32px;
+    opacity: 1;
+}
+
+.anketa_header {
+    padding: 32px 32px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.anketa h2{
+    margin: 27px 0 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1B234A;
+}
+
+.anketa_header p{
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+
+    /* Gray/800 */
+
+    color: #1B234A;
+}
+
+.anketa_close {
+    cursor: pointer;
+}
+
+.anketa_description {
+    background: #FFF4CC;
+    padding: 16px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #1B234A;
+}
+
+.anketa h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1B234A;
+}
+
+
+.anketa_smoking{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+
+
+/*Стилизация радио кнопок*/
+.anketa_smoking .radio {
+    margin: 0 0 20px;
+}
+.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-label{
+    font-size: 14px;
+    line-height: 20px;
+}
+.radio input[type="radio"] + .radio-label:before {
+    content: '';
+
+    background: #f4f4f4;
+    border-radius: 100%;
+    border: 2px solid #A0A8C5;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -0.2em;
+    margin-right: 8px;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked + .radio-label:before {
+    background-color: #40B3B7;
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio input[type="radio"]:focus + .radio-label:before {
+    outline: none;
+    border-color: #40B3B7;
+}
+.radio input[type="radio"]:disabled + .radio-label:before {
+    box-shadow: inset 0 0 0 4px #f4f4f4;
+    border-color: #b4b4b4;
+    background: #b4b4b4;
+}
+.radio input[type="radio"] + .radio-label:empty:before {
+    margin-right: 0;
+}
+
+
+.anketa_chronic_disease {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #A0A8C5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    color: #A0A8C5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.tags_block {
+
+}
+.tags {
+    display:inline-block;
+    word-spacing: 0;
+    background: #DAFBF1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 6px 0 6px 9px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #40B3B7;
+    margin-bottom: 8px;
+    margin-right: 6px;
+    box-sizing: border-box;
+}
+
+.tags:after {
+    content: '\2716';
+    padding: 12px;
+}
+
+
+
+
+
+.anketa_heredity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.anketa_heredity_sex{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+h4 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+
+    /* Gray/800 */
+
+    color: #1B234A;
+
+}
+
+.anketa_heredityDescription {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+
+    font-feature-settings: 'ordn' on;
+
+    /* Gray/500 */
+
+    color: #A0A8C5;
+}
+
+.anketa_heredity_sex h4{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    margin-bottom: 18px;
+    font-feature-settings: 'ordn' on;
+
+    /* Gray/800 */
+
+    color: #1B234A;
+}
+
+
+
+
+
+
+/*Чекбокс*/
+
+
+.cbx {
+    /*margin: auto;*/
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #1B234A;
+    /*transform: translate3d(0, 0, 0);*/
+}
+.cbx span:first-child {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    background: #F3F6FB;
+    /* Gray/500 */
+    border: 2px solid #A0A8C5;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    /*transform: translate3d(0, 0, 0);*/
+}
+.cbx span:first-child:before {
+    /*content: "";*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: #506EEC;*/
+    /*display: block;*/
+    /*transform: scale(0);*/
+    /*opacity: 1;*/
+    /*border-radius: 50%;*/
+}
+
+.cbx span:last-child {
+    padding-left: 8px;
+}
+.cbx:hover span:first-child {
+    border-color: #506EEC;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+    background: #40B3B7;
+    border: 2px solid #40B3B7;
+    /*animation: wave 0.4s ease;*/
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+
+.anketa_block hr{
+    margin: 0;
+}
+
+.anketa_button{
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 16px;
+    width: 144px;
+    height: 48px;
+    margin: 32px 32px 0;
+    background: #40B3B7;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+
+    body {
+        background: #E5E5E5;
+    }
+    .main_block {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .block_txt h2 {
+        padding: 0 16px;
+        margin: 20px auto 16px;
+    }
+    .block_img {
+        height: 300px;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .anketa_block {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        margin: 0;
+    }
+    .center {
+        margin: 0 auto;
+        padding: 0;
+        /* position: relative; */
+    }
+
+    .block_txt p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    h1 {
+        padding: 16px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #1B234A;
+        margin: 0;
+
+    }
+
+        .chb {
+            display: inline-block;
+        }
+        .anketa {
+            padding: 16px;
+        }
+        .anketa_heredity {
+            flex-direction: column;
+
+        }
+        .anketa_heredity_sex {
+            width: 100%;
+        }
+
+    .anketa_button {
+        width: auto;
+        margin: 0 32px;
+    }
+
+    .anketa_header {
+        padding: 15px;
+        flex-direction: row-reverse;
+        box-shadow: 0px 0px 1px rgba(27, 35, 74, 0.15), 0px 4px 6px rgba(27, 35, 74, 0.06);
+    }
+
+    hr {display: none;}
+    .button {
+
+    }
+}
